@@ -1,0 +1,32 @@
+﻿<Window x:Class="GUI.VolunteerGUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="VolunteerGUI" Height="450" Width="800">
+    <Grid>
+        <Button Content="Number hours left this month" HorizontalAlignment="Center" Height="30" Margin="0,24,0,0" VerticalAlignment="Top" Width="264" Click="Button_Click"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="30" Margin="138,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Enter volunteer Id:" HorizontalAlignment="Left" Height="30" Margin="24,24,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Enter Service Id:" HorizontalAlignment="Left" Height="30" Margin="17,154,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtIdService" HorizontalAlignment="Left" Height="30" Margin="138,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
+        <Button Content="Count Volunteer And Requests Year In Service" HorizontalAlignment="Center" Height="30" Margin="0,156,0,0" VerticalAlignment="Top" Width="264" Click="Button_Click_1"/>
+        <Label Content="Enter volunteer Id:" HorizontalAlignment="Left" Height="49" Margin="20,201,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.582,1.24"/>
+        <TextBox x:Name="txtidV"  HorizontalAlignment="Left" Height="26" Margin="138,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="108"/>
+        <Button Content="Count Hours And Avg Hours Last Year" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="264" Click="Button_Click_2"/>
+        <Label Content="Enter volunteer Id:" HorizontalAlignment="Left" Height="48" Margin="21,250,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="txtidV_1"  HorizontalAlignment="Left" Height="25" Margin="138,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108"/>
+        <Button Content="Get Upcoming Requests For Volunteer" HorizontalAlignment="Center" Height="24" Margin="0,251,0,0" VerticalAlignment="Top" Width="264" Click="Button_Click_3"/>
+        <DataGrid x:Name="showGetUpcomingRequests" HorizontalAlignment="Left" Height="78" Margin="537,251,0,0" VerticalAlignment="Top" Width="254" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Enter Service Id:" HorizontalAlignment="Left" Height="29" Margin="21,71,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.543,0.888"/>
+        <TextBox x:Name="txtIdSer" HorizontalAlignment="Left" Height="29" Margin="136,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="112"/>
+        <Button Content="Get Volunteers Max Count Hour Month" HorizontalAlignment="Center" Height="28" Margin="0,72,0,0" VerticalAlignment="Top" Width="264" Click="Button_Click_4"/>
+        <DataGrid x:Name="DVolunteer" HorizontalAlignment="Left" Height="70" Margin="542,72,0,0" VerticalAlignment="Top" Width="232" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Enter Id Volunteer:" HorizontalAlignment="Left" Height="30" Margin="20,360,0,0" VerticalAlignment="Top" Width="107"/>
+        <Button Content="Count_Unique_Services_By_Volunteer" HorizontalAlignment="Left" Height="30" Margin="255,363,0,0" VerticalAlignment="Top" Width="264" Click="Button_Click_5"/>
+        <TextBox x:Name="IdV" HorizontalAlignment="Left" Height="27" Margin="136,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92"/>
+        <!--<Button Content="Count Volunteer And Requests Year In Service" HorizontalAlignment="Left" Height="30" Margin="269,93,0,0" VerticalAlignment="Top" Width="288" Click="Button_Click1"/>-->
+    </Grid>
+</Window>
